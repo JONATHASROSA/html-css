@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         td, th {
             border: 1px solid black;
@@ -29,10 +30,22 @@
         .th, .est, .pop, .tot {
             text-align: center;
         }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: black;
+
+        }
         thead, tfoot {
             background-color: black;
             color: white;
             text-align: center;
+        }
+        tbody > tr:nth-child(even){
+            background-color: white;
+        }
+        tbody > tr:nth-child(odd){
+            background-color: lightgrey;
         }
         td.num {
             text-align: right;
