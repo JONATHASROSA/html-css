@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de iframe</title>
+    <style>
+        iframe{
+            width: 400px;
+            height: 400px;
+            border: 1px solid black;
+        }
+    </style>
+    
+</head>
+<body>
+    <!--
+        1º - No case de ter uma CSS o que prevalece é o style da CSS;
+        2º - Caso tenha um style inline, prevalece;
+        3º -  3º - Tamanho padrão de um iframe é de 300px x 150px;
+
+        O parametro Scolling, serve para permitir ou não uma barra de rolagem dentro de um iframe.
+    -->
+    <h1>Testando o uso de iframe.</h1>
+    <p>Acessando o site do
+
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" height="500">
+            <a href="https://www.cursoemvideo.com" target="_blank"></a>
+        </iframe> 
+       
+        para aprender a programar.
+    </p>
+    <p>O site do 
+        <iframe src="https://www.google.com.br" frameborder="0">
+            <a href="https://www.google.com.br">google</a>
+        </iframe> 
+        
+        também é muito legal, pena que não funciona dentro de um iframe, nem em uma link ancorado.
+    </p>
+    <p>O repositório do Guanabara 
+        <iframe src="https://gustavoguanabara.github.io" frameborder="0" height="500" width="500">
+            <a href="https://gustavoguanabara.github.io"></a>
+        </iframe> 
+        também é bem legal.
+    </p>
+</body>
+</html>
